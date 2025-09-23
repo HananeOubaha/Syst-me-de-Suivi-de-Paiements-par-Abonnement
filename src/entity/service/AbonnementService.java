@@ -1,4 +1,4 @@
-package service;
+package entity.service;
 
 public class AbonnementService {
 }
