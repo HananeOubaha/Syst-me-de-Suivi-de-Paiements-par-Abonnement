@@ -1,5 +1,7 @@
 package entity;
 
+import enums.StatutPaiement;
+
 import java.time.LocalDate;
 import java.util.UUID;
 
@@ -55,7 +57,11 @@ public class Paiement {
     public StatutPaiement getStatut() {
         return statut;
     }
+
     public void setStatut(StatutPaiement statut) {
-        this.statut = statut;
+
+    }
+
+    public void setIdPaiement(String idPaiement) {
     }
 }
