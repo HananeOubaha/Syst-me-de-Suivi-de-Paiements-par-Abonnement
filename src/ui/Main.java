@@ -14,7 +14,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Menu {
+public class Main {
 
     private static final Scanner scanner = new Scanner(System.in);
     private static final AbonnementService abonnementService = new AbonnementService();
