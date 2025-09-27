@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/1b15702a-eafd-4cc9-9b6c-ead6ba05f114/console.sql" value="1b15702a-eafd-4cc9-9b6c-ead6ba05f114" />
+    <file url="file://$PROJECT_DIR$/src/dao/PaiementDAO.java" value="eb32c69d-ee55-43d3-9ec5-9894d0e05933" />
+  </component>
+</project>
