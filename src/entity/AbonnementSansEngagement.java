@@ -1,5 +1,7 @@
 package entity;
 
+import enums.StatutAbonnement;
+
 import java.time.LocalDate;
 
 public class AbonnementSansEngagement extends Abonnement {
