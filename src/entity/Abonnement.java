@@ -1,5 +1,7 @@
 package entity;
 
+import enums.StatutAbonnement;
+
 import java.time.LocalDate;
 import java.util.UUID;
 
@@ -22,6 +24,7 @@ public abstract class Abonnement {
 
     // Getters & setters
     public String getId() { return id; }
+    public void setId(String id) { this.id = id; } // Added this setter
     public String getNomService() { return nomService; }
     public void setNomService(String nomService) { this.nomService = nomService; }
 
