@@ -9,13 +9,10 @@ import enums.StatutPaiement;
 
 import java.time.LocalDate;
 import java.time.Month;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
-import static jdk.nashorn.internal.objects.NativeArray.forEach;
 
 public class PaiementService {
     private final PaiementDAO paiementDAO;
@@ -60,16 +57,8 @@ public class PaiementService {
 
     public void paiementsNonpayerAvecTotal(Paiement paiement ,String idAbonnement){
 
+        paiementDAO.findByAbonnement(idAbonnement);
 
-        List<Paiement> paiments =paiementDAO.findByAbonnement(idAbonnement);
-
-        paiments.stream()
-            .filter(p -> p.getStatut().equals(StatutPaiement.NON_PAYE))
-                .map(p -> p.)
-            .forEach(System.out:: println);
-
-
-
-
+        list<Paiement>
     }
     }
