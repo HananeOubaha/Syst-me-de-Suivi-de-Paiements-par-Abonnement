@@ -15,7 +15,7 @@ import java.time.format.DateTimeParseException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Menu {
+public class Main {
 
     private static final Scanner scanner = new Scanner(System.in);
     // Utilisation des services validés précédemment

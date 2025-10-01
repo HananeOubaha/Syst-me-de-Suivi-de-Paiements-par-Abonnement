@@ -9,6 +9,7 @@ import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class AbonnementDAO {
 
@@ -111,6 +112,32 @@ public class AbonnementDAO {
         }
 
         return abo;
+    }
+
+    // Recupere les abonnements actifs :
+    public List<Abonnement> findActiveSubscriptions() {
+        List<Abonnement> allSubscriptions = findAll();
+        // Filtre la liste pour ne garder que ceux qui sont ACTIFs
+        return allSubscriptions.stream()
+                .filter(abo -> abo.getStatut() == StatutAbonnement.ACTIVE)
+                .collect(Collectors.toList());
+    }
+
+    // filtrer par type :
+    public List<Abonnement> findByType(String type) {
+        List<Abonnement> allSubscriptions = findAll();
+
+        // UTILISATION DE LA PROGRAMMATION FONCTIONNELLE (STREAM API)
+        return allSubscriptions.stream()
+                .filter(abonnement -> {
+                    if ("AVEC_ENGAGEMENT".equalsIgnoreCase(type)) {
+                        return abonnement instanceof AbonnementAvecEngagement;
+                    } else if ("SANS_ENGAGEMENT".equalsIgnoreCase(type)) {
+                        return abonnement instanceof AbonnementSansEngagement;
+                    }
+                    return false;
+                })
+                .collect(Collectors.toList());
     }
 
     //  UPDATE

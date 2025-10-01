@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Syst-me-de-Suivi-de-Paiements-par-Abonnement:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Syst_me_de_Suivi_de_Paiements_par_Abonnement_jar</output-path>
+    <root id="archive" name="Syst-me-de-Suivi-de-Paiements-par-Abonnement.jar">
+      <element id="module-output" name="Syst-me-de-Suivi-de-Paiements-par-Abonnement" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../libs/postgresql-42.7.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

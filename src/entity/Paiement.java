@@ -21,14 +21,28 @@ public class Paiement {
         this.typePaiement = typePaiement;
         this.statut = statut;
     }
+    public Paiement(String idPaiement, String idAbonnement, LocalDate dateEcheance, LocalDate datePaiement, String typePaiement, StatutPaiement statut) {
+        this.idPaiement = idPaiement; // ID lu de la base de données
+        this.idAbonnement = idAbonnement;
+        this.dateEcheance = dateEcheance;
+        this.datePaiement = datePaiement;
+        this.typePaiement = typePaiement;
+        this.statut = statut;
+    }
 
     // Getters & setters
     public String getIdPaiement() {
         return idPaiement;
     }
+
+    public void setIdPaiement(String idPaiement) {
+        this.idPaiement = idPaiement;
+    }
+
     public String getIdAbonnement() {
         return idAbonnement;
     }
+
     public void setIdAbonnement(String idAbonnement) {
         this.idAbonnement = idAbonnement;
     }
@@ -36,6 +50,7 @@ public class Paiement {
     public LocalDate getDateEcheance() {
         return dateEcheance;
     }
+
     public void setDateEcheance(LocalDate dateEcheance) {
         this.dateEcheance = dateEcheance;
     }
@@ -43,6 +58,7 @@ public class Paiement {
     public LocalDate getDatePaiement() {
         return datePaiement;
     }
+
     public void setDatePaiement(LocalDate datePaiement) {
         this.datePaiement = datePaiement;
     }
@@ -50,6 +66,7 @@ public class Paiement {
     public String getTypePaiement() {
         return typePaiement;
     }
+
     public void setTypePaiement(String typePaiement) {
         this.typePaiement = typePaiement;
     }
@@ -59,9 +76,6 @@ public class Paiement {
     }
 
     public void setStatut(StatutPaiement statut) {
-
-    }
-
-    public void setIdPaiement(String idPaiement) {
+        this.statut = statut;
     }
 }
